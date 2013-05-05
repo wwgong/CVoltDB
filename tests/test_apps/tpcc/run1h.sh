@@ -4,7 +4,7 @@
 # Added targets for running with asserts enabled: server-ea, client-ea
 # Usage bash run2h.sh <dir for voltdb> command
 APPNAME="tpcc"
-VOLTROOT=../$1
+VOLTROOT=../../../../$1
 CLASSPATH=$({ \
     \ls -1 $VOLTROOT/voltdb/voltdbclient-[23].*.jar; \
     \ls -1 "$VOLTROOT"/lib/*.jar; \
@@ -16,7 +16,7 @@ VOLTCOMPILER="$VOLTROOT/bin/voltcompiler"
 LICENSE="$VOLTROOT/voltdb/license.xml"
 LEADER="localhost"
 SERVERS="localhost"
-WAREHOUSES=6
+WAREHOUSES=4
 # remove build artifacts
 function clean() {
     rm -rf obj debugoutput $APPNAME.jar  plannerlog.txt
@@ -81,7 +81,7 @@ function client-ea() {
 }
 
 function help() {
-    echo "Usage: ./run_tpcc2.sh voltrootdir {clean|catalog|server|server-ea|client|client-ea}"
+    echo "Usage: ./run_tpcc1.sh voltrootdir {clean|catalog|server|server-ea|client|client-ea}"
 }
 
 # Run the target passed as the last arg on the command line

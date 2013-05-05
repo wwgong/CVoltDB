@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 APPNAME="tpcc"
-VOLTJAR=`ls ../mar21/voltdb/voltdb-2.*.jar`
-CLASSPATH="$VOLTJAR:../mar21/lib" #:./obj/com:./obj/com/procedures"
-VOLTDB="../mar21/bin/voltdb"
-VOLTCOMPILER="../mar21/bin/voltcompiler"
-LICENSE="../mar21/voltdb/license.xml"
+VOLTJAR=`ls ../../../voltdb/voltdb-2.*.jar`
+CLASSPATH="$VOLTJAR:../../../lib" #:./obj/com:./obj/com/procedures"
+VOLTDB="../../../bin/voltdb"
+VOLTCOMPILER="../../../bin/voltcompiler"
+LICENSE="../../../voltdb/license.xml"
 LEADER="localhost"
 
 # remove build artifacts

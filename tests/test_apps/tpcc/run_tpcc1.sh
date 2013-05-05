@@ -4,7 +4,7 @@
 # Added targets for running with asserts enabled: server-ea, client-ea
 
 APPNAME="tpcc"
-VOLTROOT=../$1
+VOLTROOT=../../../../$1
 CLASSPATH=$({ \
     \ls -1 $VOLTROOT/voltdb/voltdbclient-[23].*.jar; \
     \ls -1 "$VOLTROOT"/lib/*.jar; \

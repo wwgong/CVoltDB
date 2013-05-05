@@ -258,16 +258,10 @@ public abstract class StatementCompiler {
     		}
     		
     		// case 1: isCVoltDBExecution on, Escrow Update
-        	// get the column name for each SET
-        	// it is possible the user mixes Escrow syntax with old syntax, ignore it
-        	for(int i = 0; i < setClauses.length; i++){
-        		if(setClauses[i].contains("+="))
-        			setClauses[i] = setClauses[i].replace("+=", "=");
-        		else if(setClauses[i].contains("-=")) {
-        			String setColumnVal = setClauses[i].split("-=")[1].trim();
-        			setClauses[i] = setClauses[i].replace("-=", "= -" + setColumnVal);
-        		}
-        	}
+    		stmt = stmt.replace("+=", "=").replace("-=", "=");
+    		
+    		return stmt;
+    		
     	} else {
         	// case 2: isCVoltDBExectuion off, change to original syntax
         	// get the column name for each SET
@@ -278,21 +272,22 @@ public abstract class StatementCompiler {
         			setClauses[i] = setClauses[i].replace("+=", "= " + setColumnName + "+");
         		else if(setClauses[i].contains("-="))
         			setClauses[i] = setClauses[i].replace("-=", "= " + setColumnName + "-");
-        	}
+        	}    	
+
+	    	// generate new stmt
+	    	String newStmt = "";
+	    	newStmt = newStmt.concat(updateClause).concat(" SET ");
+	    	for(int i = 0; i < setClauses.length - 1; i++)
+	    		newStmt = newStmt.concat(setClauses[i] + ",");
+	    	newStmt = newStmt.concat(setClauses[setClauses.length - 1]);
+	    	if(whereClause != null)
+	    		newStmt = newStmt.concat(" WHERE ").concat(whereClause);
+	    	
+	    	compiler.addInfo("Replaced new stmt: " + newStmt.toUpperCase());
+	    	
+	    	return newStmt.toUpperCase();
     	}
-        	
-    	// generate new stmt
-    	String newStmt = "";
-    	newStmt = newStmt.concat(updateClause).concat(" SET ");
-    	for(int i = 0; i < setClauses.length - 1; i++)
-    		newStmt = newStmt.concat(setClauses[i] + ",");
-    	newStmt = newStmt.concat(setClauses[setClauses.length - 1]);
-    	if(whereClause != null)
-    		newStmt = newStmt.concat(" WHERE ").concat(whereClause);
     	
-    	compiler.addInfo("Replaced new stmt: " + newStmt.toUpperCase());
-    	
-    	return newStmt.toUpperCase();
     }
 
     /**

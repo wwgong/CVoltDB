@@ -82,6 +82,34 @@ void CatalogType::set(const string &field, const string &value) {
     // boolean (false)
     else if (indicator == 'f')
         val.intValue = 0;
+    // GWW: list of values
+    else if (indicator == '['){
+    	/*
+    	string newval = value.substr(1, value.length() - 1);
+    	vector<string> tokens = Catalog::splitString(newval, ',');
+    	*/
+
+//    	string::size_type curPos = 0;
+//        string::size_type nextPos = newval.find_first_of(",");
+//
+//        while(nextPos != string::npos)
+//        {
+//        	if(nextPos > curPos)
+//        		tokens.push_back(newval.substr(curPos, nextPos));
+//        	curPos = newval.find_first_not_of(" ", nextPos + 1);
+//        	nextPos = newval.find_first_of(",", curPos);
+//        }
+//
+//        if(curPos != string::npos && curPos < newval.length())
+//        	tokens.push_back(newval.substr(curPos));
+/*
+        for (unsigned i = 0; i < tokens.size() ; i++) {
+        	string token = tokens[i];
+        	if(isdigit(token[0]))
+        		val.arrayValue.push_back(atoi(token.c_str()));
+
+        }*/
+    }
     // Integers (including negatives)
     else if (isdigit(indicator) || (indicator == '-' && value.length() > 1 && isdigit(value[1])))
         val.intValue = atoi(value.c_str());
