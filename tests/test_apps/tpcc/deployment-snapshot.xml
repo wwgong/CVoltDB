@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<deployment>
+    <cluster hostcount="1" sitesperhost="4" kfactor="0" />
+    <httpd enabled="true">
+        <jsonapi enabled="true" />
+    </httpd>
+    
+    <snapshot prefix="cvoltdb" 
+          frequency="5m" 
+          retain="3"
+	/>
+	
+	<paths>
+   		<snapshots path="/tmp/voltdb/" />
+	</paths>
+    
+</deployment>

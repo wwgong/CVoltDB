@@ -1,0 +1,1520 @@
+12/01/29 15:35:59 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:35:59 ERROR COMPILER: [project.xml:5]: DDL Error: "type not found or user lacks privilege: LONG" in statement starting on lineno: 5
+12/01/29 15:35:59 ERROR COMPILER: Failed to compile XML
+12/01/29 15:35:59 ERROR COMPILER: DDL Error: "type not found or user lacks privilege: LONG" in statement starting on lineno: 5
+12/01/29 15:35:59 ERROR COMPILER: Catalog compilation failed.
+12/01/29 15:36:51 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:36:51 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 15:36:52 ERROR COMPILER: [Insert.class]: Procedure: Insert is annotated as multi-partition but partitionInfo has non-empty value: "HELLOWORLD.DIALECT: 2"
+12/01/29 15:36:52 ERROR COMPILER: Failed to compile XML
+12/01/29 15:36:52 ERROR COMPILER: Procedure: Insert is annotated as multi-partition but partitionInfo has non-empty value: "HELLOWORLD.DIALECT: 2"
+12/01/29 15:36:52 ERROR COMPILER: Catalog compilation failed.
+12/01/29 15:37:23 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:37:23 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 15:37:23 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 15:37:23 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 15:37:23 ERROR COMPILER: [Select.class]: PartitionInfo for procedure Select references table HELLOWORLD which has no partition column (may be replicated).
+12/01/29 15:37:23 ERROR COMPILER: Failed to compile XML
+12/01/29 15:37:23 ERROR COMPILER: PartitionInfo for procedure Select references table HELLOWORLD which has no partition column (may be replicated).
+12/01/29 15:37:23 ERROR COMPILER: Catalog compilation failed.
+12/01/29 15:37:50 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:37:51 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 15:37:51 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 15:37:51 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 15:37:51 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 15:37:51 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:37:51 ERROR COMPILER: [SignIn.class]: Failed to plan for statement type(getuser) SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT; Error: "user lacks privilege or object not found: U.DIALECT"
+12/01/29 15:37:51 ERROR COMPILER: Failed to compile XML
+12/01/29 15:37:51 ERROR COMPILER: Failed to plan for statement type(getuser) SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT; Error: "user lacks privilege or object not found: U.DIALECT"
+12/01/29 15:37:51 ERROR COMPILER: Catalog compilation failed.
+12/01/29 15:38:26 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:38:26 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 15:38:26 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 15:38:26 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 15:38:27 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 15:38:27 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:38:27 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 15:38:27 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:38:27 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 15:38:27 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 15:38:27 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 15:38:39 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:38:40 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 15:38:40 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 15:38:40 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 15:38:40 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 15:38:40 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:38:40 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 15:38:40 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:38:40 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 15:38:40 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 15:38:40 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 20:38:42 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/01/29 20:38:42 INFO HOST: Build: 2.0 ?revision= Community Edition
+12/01/29 20:38:42 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 20:38:42 ERROR HOST: Error schema validating deployment.xml file. cvc-complex-type.3.2.2: Attribute 'leader' is not allowed to appear in element 'cluster'.
+12/01/29 20:38:42 ERROR HOST: Not a valid XML deployment file at URL: deployment.xml
+12/01/29 20:38:42 FATAL HOST: Unexpected crash
+12/01/29 20:38:42 FATAL HOST: Stack trace from crashVoltDB() method:
+java.lang.Thread.dumpThreads(Native Method)
+java.lang.Thread.getAllStackTraces(Thread.java:1554)
+org.voltdb.VoltDB.crashLocalVoltDB(VoltDB.java:440)
+org.voltdb.VoltDB.crashVoltDB(VoltDB.java:416)
+org.voltdb.RealVoltDB.readDeploymentAndCreateStarterCatalogContext(RealVoltDB.java:491)
+org.voltdb.RealVoltDB.initialize(RealVoltDB.java:290)
+org.voltdb.VoltDB.initialize(VoltDB.java:502)
+org.voltdb.VoltDB.main(VoltDB.java:484)
+
+12/01/29 15:39:59 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 15:40:00 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 15:40:00 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 15:40:00 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 15:40:00 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 15:40:00 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:40:00 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 15:40:00 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 15:40:00 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 15:40:00 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 15:40:00 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 20:40:02 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/01/29 20:40:02 INFO HOST: Build: 2.0 ?revision= Community Edition
+12/01/29 20:40:02 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 20:40:02 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/01/29 20:40:02 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/01/29 20:40:02 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/01/29 20:40:02 INFO HOST: Creating voltdbroot directory: /Users/wwgong/voltdb-2.0/examples/helloworld-replicated/voltdbroot
+12/01/29 20:40:02 INFO HOST: Using "/Users/wwgong/voltdb-2.0/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/01/29 20:40:02 INFO HOST: Creating snapshot directory: /Users/wwgong/voltdb-2.0/examples/helloworld-replicated/voltdbroot/snapshots
+12/01/29 20:40:02 INFO HOST: Creating export overflow directory: /Users/wwgong/voltdb-2.0/examples/helloworld-replicated/voltdbroot/export_overflow
+12/01/29 20:40:02 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 20:40:02 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/01/29 20:40:02 INFO HOST: Beginning inter-node communication on port 3021.
+12/01/29 20:40:02 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/01/29 20:40:02 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/01/29 20:40:03 TRACE HOST: Creating local site 0
+12/01/29 20:40:03 TRACE HOST: Creating local site 1
+12/01/29 20:40:03 TRACE HOST: Creating local site 2
+12/01/29 20:40:03 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/01/29 20:40:03 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/01/29 20:40:03 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/01/29 20:40:03 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@45389b3f
+12/01/29 20:40:03 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/01/29 20:40:03 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/01/29 20:40:03 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:62715
+12/01/29 20:40:03 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:62715
+12/01/29 20:40:03 INFO ZK-SERVER: Established session 0xefc4634c5800001 with negotiated timeout 6000 for client /127.0.0.1:62715
+12/01/29 20:40:03 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xefc4634c5800001, negotiated timeout = 6000
+12/01/29 20:40:03 DEBUG HOST: Gathered 0 snapshot information
+12/01/29 20:40:03 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/01/29 20:40:03 DEBUG HOST: There are 0 snapshots available in the cluster
+12/01/29 20:40:03 DEBUG HOST: Sending 17609 catalog bytes
+12/01/29 20:40:03 DEBUG HOST: Got a catalog!
+12/01/29 20:40:03 DEBUG HOST: Got 17609 catalog bytes
+12/01/29 20:40:03 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-272162253317735301.jar
+12/01/29 20:40:04 INFO EXPORT: System is not using any export functionality.
+12/01/29 20:40:04 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/01/29 20:40:04 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/01/29 20:40:04 INFO HOST: Loading native VoltDB code (voltdb-2.0). A confirmation message will follow if the loading is successful.
+12/01/29 20:40:04 INFO HOST: Successfully loaded native VoltDB library voltdb-2.0.
+12/01/29 20:40:04 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/01/29 20:40:04 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/01/29 20:40:04 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/01/29 20:40:04 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/01/29 20:40:04 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/01/29 20:40:04 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/01/29 20:40:04 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.0/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.0/obj/release/dist/voltdb/log4j.properties -da
+12/01/29 20:40:04 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/01/29 20:40:04 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/01/29 20:40:04 INFO HOST: No schedule set for automated snapshots.
+12/01/29 20:40:04 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/01/29 20:40:04 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/01/29 20:40:04 INFO HOST: HOST MEMORY (MB): 4096
+12/01/29 20:40:04 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/01/29 20:40:04 INFO HOST: JAVA VERSION:     1.6.0_29
+12/01/29 20:40:04 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/01/29 20:40:04 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/01/29 20:40:04 INFO HOST: About to list cluster interfaces for all nodes with format ip:client-port:admin-port:http-port
+12/01/29 20:40:04 INFO HOST:   Host id: 0 with interfaces: 192.168.1.134:21212:-1:2147483647 [SELF]
+12/01/29 20:40:04 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/01/29 20:40:04 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/01/29 20:40:04 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/01/29 20:40:04 DEBUG HOST: Waiting for all hosts to complete restore
+12/01/29 20:40:05 INFO HOST: Server completed initialization.
+12/01/29 16:14:55 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 16:14:56 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 16:14:56 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 16:14:56 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 16:14:56 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 16:14:56 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 16:14:56 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 16:14:56 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 16:14:56 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 16:14:56 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 16:14:57 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 16:14:57 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 16:15:02 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 16:15:03 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 16:15:03 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 16:15:03 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 16:15:03 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 16:15:03 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 16:15:03 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 16:15:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 16:15:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 16:15:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 16:15:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 16:15:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 21:15:05 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/01/29 21:15:05 INFO HOST: Build: 2.0 ?revision= Community Edition
+12/01/29 21:15:05 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 21:15:05 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/01/29 21:15:05 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/01/29 21:15:05 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/01/29 21:15:05 INFO HOST: Using "/Users/wwgong/voltdb-2.0/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/01/29 21:15:05 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 21:15:05 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/01/29 21:15:05 INFO HOST: Beginning inter-node communication on port 3021.
+12/01/29 21:15:05 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/01/29 21:15:05 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/01/29 21:15:06 TRACE HOST: Creating local site 0
+12/01/29 21:15:06 TRACE HOST: Creating local site 1
+12/01/29 21:15:06 TRACE HOST: Creating local site 2
+12/01/29 21:15:06 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/01/29 21:15:06 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/01/29 21:15:07 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/01/29 21:15:07 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@1959e6e8
+12/01/29 21:15:07 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/01/29 21:15:07 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/01/29 21:15:07 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:63087
+12/01/29 21:15:07 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:63087
+12/01/29 21:15:07 INFO ZK-SERVER: Established session 0xefc5641da800001 with negotiated timeout 6000 for client /127.0.0.1:63087
+12/01/29 21:15:07 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xefc5641da800001, negotiated timeout = 6000
+12/01/29 21:15:07 DEBUG HOST: Gathered 0 snapshot information
+12/01/29 21:15:07 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/01/29 21:15:07 DEBUG HOST: There are 0 snapshots available in the cluster
+12/01/29 21:15:07 DEBUG HOST: Sending 18406 catalog bytes
+12/01/29 21:15:07 DEBUG HOST: Got a catalog!
+12/01/29 21:15:07 DEBUG HOST: Got 18406 catalog bytes
+12/01/29 21:15:07 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-115998156255899340.jar
+12/01/29 21:15:07 INFO EXPORT: System is not using any export functionality.
+12/01/29 21:15:07 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/01/29 21:15:07 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/01/29 21:15:07 INFO HOST: Loading native VoltDB code (voltdb-2.0). A confirmation message will follow if the loading is successful.
+12/01/29 21:15:07 INFO HOST: Successfully loaded native VoltDB library voltdb-2.0.
+12/01/29 21:15:08 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/01/29 21:15:08 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/01/29 21:15:08 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/01/29 21:15:08 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/01/29 21:15:08 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/01/29 21:15:08 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/01/29 21:15:08 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.0/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.0/obj/release/dist/voltdb/log4j.properties -da
+12/01/29 21:15:08 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/01/29 21:15:08 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/01/29 21:15:08 INFO HOST: No schedule set for automated snapshots.
+12/01/29 21:15:08 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/01/29 21:15:08 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/01/29 21:15:08 INFO HOST: HOST MEMORY (MB): 4096
+12/01/29 21:15:08 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/01/29 21:15:08 INFO HOST: JAVA VERSION:     1.6.0_29
+12/01/29 21:15:08 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/01/29 21:15:08 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/01/29 21:15:08 INFO HOST: About to list cluster interfaces for all nodes with format ip:client-port:admin-port:http-port
+12/01/29 21:15:08 INFO HOST:   Host id: 0 with interfaces: 192.168.1.134:21212:-1:2147483647 [SELF]
+12/01/29 21:15:08 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/01/29 21:15:08 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/01/29 21:15:08 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/01/29 21:15:08 DEBUG HOST: Waiting for all hosts to complete restore
+12/01/29 21:15:09 INFO HOST: Server completed initialization.
+12/01/29 16:30:09 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 16:30:09 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 16:30:09 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 16:30:10 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 16:30:10 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 16:30:10 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 16:30:10 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 16:30:10 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 16:30:10 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 16:30:10 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 16:30:10 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 16:30:10 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 21:30:11 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/01/29 21:30:11 INFO HOST: Build: 2.0 ?revision= Community Edition
+12/01/29 21:30:11 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 21:30:12 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/01/29 21:30:12 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/01/29 21:30:12 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/01/29 21:30:12 INFO HOST: Using "/Users/wwgong/voltdb-2.0/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/01/29 21:30:12 INFO HOST: URL of deployment info: deployment.xml
+12/01/29 21:30:12 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/01/29 21:30:12 INFO HOST: Beginning inter-node communication on port 3021.
+12/01/29 21:30:12 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/01/29 21:30:12 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/01/29 21:30:12 TRACE HOST: Creating local site 0
+12/01/29 21:30:12 TRACE HOST: Creating local site 1
+12/01/29 21:30:12 TRACE HOST: Creating local site 2
+12/01/29 21:30:12 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/01/29 21:30:12 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/01/29 21:30:12 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/01/29 21:30:12 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@758689a
+12/01/29 21:30:12 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/01/29 21:30:12 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:63194
+12/01/29 21:30:12 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/01/29 21:30:12 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:63194
+12/01/29 21:30:12 INFO ZK-SERVER: Established session 0xefc5d2ac1000001 with negotiated timeout 6000 for client /127.0.0.1:63194
+12/01/29 21:30:12 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xefc5d2ac1000001, negotiated timeout = 6000
+12/01/29 21:30:12 DEBUG HOST: Gathered 0 snapshot information
+12/01/29 21:30:12 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/01/29 21:30:12 DEBUG HOST: There are 0 snapshots available in the cluster
+12/01/29 21:30:12 DEBUG HOST: Sending 18405 catalog bytes
+12/01/29 21:30:12 DEBUG HOST: Got a catalog!
+12/01/29 21:30:12 DEBUG HOST: Got 18405 catalog bytes
+12/01/29 21:30:12 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-1878639966106866247.jar
+12/01/29 21:30:13 INFO EXPORT: System is not using any export functionality.
+12/01/29 21:30:13 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/01/29 21:30:13 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/01/29 21:30:13 INFO HOST: Loading native VoltDB code (voltdb-2.0). A confirmation message will follow if the loading is successful.
+12/01/29 21:30:13 INFO HOST: Successfully loaded native VoltDB library voltdb-2.0.
+12/01/29 21:30:13 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/01/29 21:30:13 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/01/29 21:30:13 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/01/29 21:30:13 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/01/29 21:30:13 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/01/29 21:30:13 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/01/29 21:30:13 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.0/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.0/obj/release/dist/voltdb/log4j.properties -da
+12/01/29 21:30:13 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/01/29 21:30:13 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/01/29 21:30:13 INFO HOST: No schedule set for automated snapshots.
+12/01/29 21:30:13 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/01/29 21:30:13 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/01/29 21:30:13 INFO HOST: HOST MEMORY (MB): 4096
+12/01/29 21:30:13 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/01/29 21:30:13 INFO HOST: JAVA VERSION:     1.6.0_29
+12/01/29 21:30:13 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/01/29 21:30:13 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/01/29 21:30:13 INFO HOST: About to list cluster interfaces for all nodes with format ip:client-port:admin-port:http-port
+12/01/29 21:30:13 INFO HOST:   Host id: 0 with interfaces: 192.168.1.134:21212:-1:2147483647 [SELF]
+12/01/29 21:30:13 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/01/29 21:30:13 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/01/29 21:30:13 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/01/29 21:30:13 DEBUG HOST: Waiting for all hosts to complete restore
+12/01/29 21:30:14 INFO HOST: Server completed initialization.
+12/01/29 17:19:25 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 17:19:26 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 17:19:26 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/01/29 17:19:26 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/01/29 17:19:26 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 17:19:26 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 17:19:26 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 17:19:26 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 17:19:26 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 17:19:26 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 17:19:26 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 17:19:26 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 17:19:26 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 17:19:26 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 17:19:26 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 17:19:26 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/01/29 17:21:02 INFO COMPILER: Path to catalog helloworld.sql
+12/01/29 17:21:03 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/01/29 17:21:03 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/01/29 17:21:03 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/01/29 17:21:03 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 17:21:03 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/01/29 17:21:03 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 17:21:03 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 17:21:03 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 17:21:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 17:21:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/01/29 17:21:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/01/29 17:21:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/01/29 17:21:03 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/01/29 17:21:03 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/01/29 17:21:03 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/15 03:47:06 INFO COMPILER: Path to catalog helloworld.sql
+12/02/15 03:47:07 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/15 03:47:07 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/15 03:47:07 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/15 03:47:07 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/15 03:47:07 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/15 03:47:07 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/15 03:47:07 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/15 03:47:07 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/15 03:47:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/15 03:47:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/15 03:47:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/15 03:47:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/15 03:47:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/15 03:47:07 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/15 03:47:07 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/15 08:47:09 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/15 08:47:09 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/15 08:47:09 INFO HOST: URL of deployment info: deployment.xml
+12/02/15 08:47:09 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/15 08:47:09 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/15 08:47:09 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/15 08:47:09 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/15 08:47:09 INFO HOST: URL of deployment info: deployment.xml
+12/02/15 08:47:09 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/15 08:47:09 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/15 08:47:09 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/15 08:47:14 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/15 08:47:14 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/15 08:47:15 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/15 08:47:15 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@40bb2bc3
+12/02/15 08:47:15 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/15 08:47:15 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/15 08:47:15 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:49262
+12/02/15 08:47:15 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:49262
+12/02/15 08:47:15 INFO ZK-SERVER: Established session 0xf26c5f75f800001 with negotiated timeout 6000 for client /127.0.0.1:49262
+12/02/15 08:47:15 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf26c5f75f800001, negotiated timeout = 6000
+12/02/15 08:47:15 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-7358376332674579496.jar
+12/02/15 08:47:16 INFO EXPORT: System is not using any export functionality.
+12/02/15 08:47:16 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/15 08:47:16 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/15 08:47:17 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/15 08:47:17 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/15 08:47:17 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/15 08:47:17 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/15 08:47:17 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/15 08:47:17 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/15 08:47:17 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/15 08:47:17 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/15 08:47:17 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/15 08:47:17 INFO HOST: No schedule set for automated snapshots.
+12/02/15 08:47:17 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/15 08:47:17 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/15 08:47:17 INFO HOST: HOST MEMORY (MB): 4096
+12/02/15 08:47:17 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/15 08:47:17 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/15 08:47:17 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/15 08:47:17 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/15 08:47:17 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/15 08:47:17 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/15 08:47:17 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/15 08:47:17 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/15 08:47:17 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/15 08:47:18 INFO HOST: Server completed initialization.
+12/02/15 03:55:31 INFO COMPILER: Path to catalog helloworld.sql
+12/02/15 03:55:31 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/15 03:55:31 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/15 03:55:31 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/15 03:55:31 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/15 03:55:31 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/15 03:55:31 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/15 03:55:31 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/15 03:55:31 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/15 03:55:31 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/15 03:55:32 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/15 03:55:32 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/15 03:55:32 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/15 03:55:32 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/15 03:55:32 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/15 03:55:32 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/15 08:55:33 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/15 08:55:33 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/15 08:55:33 INFO HOST: URL of deployment info: deployment.xml
+12/02/15 08:55:33 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/15 08:55:33 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/15 08:55:33 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/15 08:55:33 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/15 08:55:33 INFO HOST: URL of deployment info: deployment.xml
+12/02/15 08:55:33 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/15 08:55:33 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/15 08:55:33 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/15 08:55:34 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/15 08:55:34 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/15 08:55:34 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/15 08:55:34 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@4b2dd538
+12/02/15 08:55:34 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/15 08:55:34 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/15 08:55:34 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:49587
+12/02/15 08:55:34 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:49587
+12/02/15 08:55:34 INFO ZK-SERVER: Established session 0xf26c9c68e000001 with negotiated timeout 6000 for client /127.0.0.1:49587
+12/02/15 08:55:34 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf26c9c68e000001, negotiated timeout = 6000
+12/02/15 08:55:34 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-7552467828195016804.jar
+12/02/15 08:55:35 INFO EXPORT: System is not using any export functionality.
+12/02/15 08:55:35 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/15 08:55:35 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/15 08:55:35 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/15 08:55:35 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/15 08:55:35 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/15 08:55:35 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/15 08:55:35 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/15 08:55:35 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/15 08:55:35 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/15 08:55:35 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/15 08:55:35 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/15 08:55:35 INFO HOST: No schedule set for automated snapshots.
+12/02/15 08:55:35 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/15 08:55:35 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/15 08:55:35 INFO HOST: HOST MEMORY (MB): 4096
+12/02/15 08:55:35 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/15 08:55:35 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/15 08:55:35 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/15 08:55:35 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/15 08:55:36 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/15 08:55:36 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/15 08:55:36 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/15 08:55:36 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/15 08:55:36 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/15 08:55:36 INFO HOST: Server completed initialization.
+12/02/21 09:39:11 INFO COMPILER: Path to catalog helloworld.sql
+12/02/21 09:39:11 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/21 09:39:11 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/21 09:39:11 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/21 09:39:11 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/21 09:39:11 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/21 09:39:11 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/21 09:39:11 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/21 09:39:11 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/21 09:39:11 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/21 09:39:11 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/21 09:39:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/21 09:39:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/21 09:39:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/21 09:39:12 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/21 09:39:12 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/21 14:39:13 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/21 14:39:13 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/21 14:39:13 INFO HOST: URL of deployment info: deployment.xml
+12/02/21 14:39:13 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/21 14:39:13 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/21 14:39:13 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/21 14:39:13 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/21 14:39:13 INFO HOST: URL of deployment info: deployment.xml
+12/02/21 14:39:13 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/21 14:39:13 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/21 14:39:13 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/21 14:39:16 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/21 14:39:16 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/21 14:39:16 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/21 14:39:16 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@589260ee
+12/02/21 14:39:16 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/21 14:39:16 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/21 14:39:16 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:54680
+12/02/21 14:39:16 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:54680
+12/02/21 14:39:16 INFO ZK-SERVER: Established session 0xf36da2f91000001 with negotiated timeout 6000 for client /127.0.0.1:54680
+12/02/21 14:39:16 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf36da2f91000001, negotiated timeout = 6000
+12/02/21 14:39:16 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-8382070617934495150.jar
+12/02/21 14:39:17 INFO EXPORT: System is not using any export functionality.
+12/02/21 14:39:17 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/21 14:39:17 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/21 14:39:17 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/21 14:39:17 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/21 14:39:17 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/21 14:39:17 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/21 14:39:17 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/21 14:39:17 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/21 14:39:17 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/21 14:39:17 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/21 14:39:17 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/21 14:39:17 INFO HOST: No schedule set for automated snapshots.
+12/02/21 14:39:17 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/21 14:39:17 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/21 14:39:17 INFO HOST: HOST MEMORY (MB): 4096
+12/02/21 14:39:17 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/21 14:39:17 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/21 14:39:17 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/21 14:39:17 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/21 14:39:17 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/21 14:39:17 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/21 14:39:17 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/21 14:39:17 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/21 14:39:17 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/21 14:39:18 INFO HOST: Server completed initialization.
+12/02/21 14:39:22 FATAL HOST: ExecutionSite: 2 encountered an unexpected error and will die, taking this VoltDB node down.
+java.lang.AssertionError: Non-recovering write txn has invalid undo state.
+	at org.voltdb.ExecutionSite.completeTransaction(ExecutionSite.java:1218)
+	at org.voltdb.ExecutionSite.recursableRun(ExecutionSite.java:2221)
+	at org.voltdb.ExecutionSite.run(ExecutionSite.java:1148)
+	at org.voltdb.ExecutionSiteRunner.run(ExecutionSiteRunner.java:81)
+	at java.lang.Thread.run(Thread.java:680)
+12/02/21 14:39:22 FATAL HOST: Unexpected crash
+12/02/21 14:39:22 FATAL HOST: Stack trace from crashVoltDB() method:
+java.lang.Thread.dumpThreads(Native Method)
+java.lang.Thread.getAllStackTraces(Thread.java:1554)
+org.voltdb.VoltDB.crashLocalVoltDB(VoltDB.java:443)
+org.voltdb.VoltDB.crashVoltDB(VoltDB.java:419)
+org.voltdb.ExecutionSiteRunner.run(ExecutionSiteRunner.java:101)
+java.lang.Thread.run(Thread.java:680)
+
+12/02/21 09:50:14 INFO COMPILER: Path to catalog helloworld.sql
+12/02/21 09:50:14 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/21 09:50:14 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/21 09:50:14 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/21 09:50:14 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/21 09:50:14 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/21 09:50:14 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/21 09:50:14 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/21 09:50:15 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/21 09:50:15 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/21 09:50:15 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/21 09:50:15 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/21 09:50:15 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/21 09:50:15 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/21 09:50:15 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/21 09:50:15 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/21 14:50:16 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/21 14:50:16 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/21 14:50:16 INFO HOST: URL of deployment info: deployment.xml
+12/02/21 14:50:16 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/21 14:50:16 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/21 14:50:16 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/21 14:50:16 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/21 14:50:16 INFO HOST: URL of deployment info: deployment.xml
+12/02/21 14:50:16 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/21 14:50:16 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/21 14:50:16 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/21 14:50:17 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/21 14:50:17 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/21 14:50:17 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/21 14:50:17 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@4ca68fd8
+12/02/21 14:50:17 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/21 14:50:17 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/21 14:50:17 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:54710
+12/02/21 14:50:17 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:54710
+12/02/21 14:50:17 INFO ZK-SERVER: Established session 0xf36df3a9e800001 with negotiated timeout 6000 for client /127.0.0.1:54710
+12/02/21 14:50:17 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf36df3a9e800001, negotiated timeout = 6000
+12/02/21 14:50:17 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-4248402773482578144.jar
+12/02/21 14:50:18 INFO EXPORT: System is not using any export functionality.
+12/02/21 14:50:18 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/21 14:50:18 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/21 14:50:18 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/21 14:50:18 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/21 14:50:18 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/21 14:50:18 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/21 14:50:18 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/21 14:50:18 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/21 14:50:18 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/21 14:50:18 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/21 14:50:18 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/21 14:50:18 INFO HOST: No schedule set for automated snapshots.
+12/02/21 14:50:18 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/21 14:50:18 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/21 14:50:18 INFO HOST: HOST MEMORY (MB): 4096
+12/02/21 14:50:18 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/21 14:50:18 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/21 14:50:18 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/21 14:50:18 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/21 14:50:18 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/21 14:50:18 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 21212,21211,8080 [SELF]
+12/02/21 14:50:18 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/21 14:50:18 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/21 14:50:18 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/21 14:50:19 INFO HOST: Server completed initialization.
+12/02/28 07:23:09 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 07:23:11 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 07:23:11 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 07:23:11 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 07:23:11 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:23:11 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:23:11 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:23:11 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:23:11 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 07:23:11 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:23:12 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 07:23:12 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 07:23:12 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 07:23:12 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 07:23:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:23:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 07:23:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 07:23:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 07:23:12 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 07:23:12 ERROR COMPILER: [Insert2.class]: Cannot load class for procedure: Insert2
+12/02/28 07:23:12 ERROR COMPILER: Failed to compile XML
+12/02/28 07:23:12 ERROR COMPILER: Cannot load class for procedure: Insert2
+12/02/28 07:23:12 ERROR COMPILER: Catalog compilation failed.
+12/02/28 07:24:38 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 07:24:38 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 07:24:38 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 07:24:38 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 07:24:38 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:24:38 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:24:38 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:24:38 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:24:38 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 07:24:38 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:24:38 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 07:24:38 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 07:24:38 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 07:24:39 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 07:24:39 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:24:39 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 07:24:39 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 07:24:39 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 07:24:39 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 07:24:39 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 07:24:39 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:24:39 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 07:24:39 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 07:24:39 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 07:24:39 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 07:24:39 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 07:28:01 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 07:28:07 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 07:28:07 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 07:28:07 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 07:28:07 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:28:07 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:28:07 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:28:07 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 07:28:07 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 07:28:08 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:28:08 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 07:28:08 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 07:28:08 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 07:28:08 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 07:28:08 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:28:09 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 07:28:09 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 07:28:09 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 07:28:09 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 07:28:09 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 07:28:09 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 07:28:09 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 07:28:09 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 07:28:09 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 07:28:09 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 07:28:09 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 12:28:11 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 12:28:11 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 12:28:11 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 12:28:11 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 12:28:11 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 12:28:11 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 12:28:11 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 12:28:11 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 12:28:11 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 12:28:11 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 12:28:11 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 12:28:12 INFO HOST: HTTP admin console unable to bind to port 8080. Exiting.
+12/02/28 12:28:36 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 12:28:36 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 12:28:36 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 12:28:37 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 12:28:37 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 12:28:37 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 12:28:37 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 12:28:37 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 12:28:37 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 12:28:37 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 12:28:37 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 12:28:37 INFO HOST: HTTP admin console unable to bind to port 8080. Exiting.
+12/02/28 12:29:35 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 12:29:35 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 12:29:35 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 12:29:36 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 12:29:36 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 12:29:36 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 12:29:36 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 12:29:36 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 12:29:36 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 12:29:36 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 12:29:36 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 12:29:39 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 12:29:39 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 12:29:39 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 12:29:39 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@28f19d6e
+12/02/28 12:29:39 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 12:29:39 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 12:29:39 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58374
+12/02/28 12:29:39 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58374
+12/02/28 12:29:39 INFO ZK-SERVER: Established session 0xf48a51c13800001 with negotiated timeout 6000 for client /127.0.0.1:58374
+12/02/28 12:29:39 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48a51c13800001, negotiated timeout = 6000
+12/02/28 12:29:39 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-3162647111455127190.jar
+12/02/28 12:29:40 INFO EXPORT: System is not using any export functionality.
+12/02/28 12:29:40 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 12:29:40 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 12:29:40 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 12:29:40 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 12:29:40 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 12:29:40 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 12:29:40 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 12:29:40 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 12:29:40 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 12:29:40 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 12:29:40 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 12:29:40 INFO HOST: No schedule set for automated snapshots.
+12/02/28 12:29:40 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 12:29:40 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 12:29:40 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 12:29:40 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 12:29:40 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 12:29:40 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 12:29:40 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 12:29:40 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 12:29:40 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 12:29:40 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 12:29:40 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 12:29:40 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 12:29:41 INFO HOST: Server completed initialization.
+12/02/28 08:12:06 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 08:12:07 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 08:12:07 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 08:12:07 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 08:12:07 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:12:07 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:12:07 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:12:07 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:12:07 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 08:12:07 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:12:07 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 08:12:07 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:12:07 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:12:07 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:12:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:12:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:12:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:12:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 08:12:07 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:12:07 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:12:07 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 08:12:07 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:12:07 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:12:07 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 08:12:07 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 08:12:07 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 08:12:07 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 13:12:15 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:12:15 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:12:15 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:12:15 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:12:15 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:12:15 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:12:15 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:12:15 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:12:15 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:12:15 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:12:15 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:12:16 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:12:16 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:12:16 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:12:16 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@28f19d6e
+12/02/28 13:12:16 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:12:16 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:12:16 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58619
+12/02/28 13:12:16 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58619
+12/02/28 13:12:16 INFO ZK-SERVER: Established session 0xf48b89e7a800001 with negotiated timeout 6000 for client /127.0.0.1:58619
+12/02/28 13:12:16 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48b89e7a800001, negotiated timeout = 6000
+12/02/28 13:12:16 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-3189892504708200274.jar
+12/02/28 13:12:17 INFO EXPORT: System is not using any export functionality.
+12/02/28 13:12:17 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 13:12:17 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 13:12:17 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 13:12:17 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 13:12:17 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 13:12:17 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 13:12:17 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 13:12:17 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 13:12:17 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 13:12:17 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 13:12:17 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 13:12:17 INFO HOST: No schedule set for automated snapshots.
+12/02/28 13:12:17 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 13:12:17 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 13:12:17 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 13:12:17 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 13:12:17 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 13:12:17 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 13:12:17 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 13:12:18 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 13:12:18 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 13:12:18 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 13:12:18 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 13:12:18 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 13:12:18 INFO HOST: Server completed initialization.
+12/02/28 13:15:46 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:15:46 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:15:46 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:15:46 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:15:46 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:15:46 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:15:46 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:15:46 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:15:46 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:15:46 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:15:46 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:15:47 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:15:47 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:15:47 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:15:47 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@4ca68fd8
+12/02/28 13:15:47 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:15:47 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:15:47 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58648
+12/02/28 13:15:47 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58648
+12/02/28 13:15:47 INFO ZK-SERVER: Established session 0xf48ba3a86000401 with negotiated timeout 6000 for client /127.0.0.1:58648
+12/02/28 13:15:47 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48ba3a86000401, negotiated timeout = 6000
+12/02/28 08:15:52 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 08:15:53 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 08:15:53 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 08:15:53 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 08:15:53 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:15:53 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:15:53 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:15:53 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:15:53 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 08:15:53 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:15:53 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 08:15:53 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:15:53 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:15:53 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:15:53 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:15:53 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:15:53 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:15:53 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 08:15:53 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:15:53 INFO COMPILER: [Insert2.class]: Compiling Statement: SELECT * FROM TEST;
+12/02/28 08:15:53 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:15:53 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 08:15:53 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:15:53 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:15:53 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 08:15:53 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 08:15:53 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 08:15:53 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 13:15:55 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:15:55 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:15:55 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:15:55 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:15:55 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:15:55 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:15:55 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:15:55 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:15:55 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:15:55 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:15:55 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:15:55 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:15:55 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:15:55 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:15:56 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@6f27f79d
+12/02/28 13:15:56 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:15:56 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:15:56 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58651
+12/02/28 13:15:56 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58651
+12/02/28 13:15:56 INFO ZK-SERVER: Established session 0xf48ba4b7d000001 with negotiated timeout 6000 for client /127.0.0.1:58651
+12/02/28 13:15:56 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48ba4b7d000001, negotiated timeout = 6000
+12/02/28 13:15:56 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-6372236302567553455.jar
+12/02/28 13:15:57 INFO EXPORT: System is not using any export functionality.
+12/02/28 13:15:57 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 13:15:57 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 13:15:57 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 13:15:57 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 13:15:57 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 13:15:57 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 13:15:57 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 13:15:57 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 13:15:57 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 13:15:57 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 13:15:57 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 13:15:57 INFO HOST: No schedule set for automated snapshots.
+12/02/28 13:15:57 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 13:15:57 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 13:15:57 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 13:15:57 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 13:15:57 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 13:15:57 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 13:15:57 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 13:15:57 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 13:15:57 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 13:15:57 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 13:15:57 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 13:15:57 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 13:15:58 INFO HOST: Server completed initialization.
+12/02/28 08:31:04 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 08:31:04 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 08:31:04 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 08:31:04 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 08:31:04 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:31:04 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:31:04 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:31:04 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:31:04 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 08:31:04 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:31:04 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 08:31:04 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:31:04 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:31:05 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:31:05 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:31:05 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:31:05 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:31:05 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 08:31:05 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:31:05 INFO COMPILER: [Insert2.class]: Compiling Statement: SELECT * FROM TEST;
+12/02/28 08:31:05 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:31:05 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 08:31:05 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:31:05 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:31:05 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 08:31:05 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 08:31:05 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 08:31:05 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 13:31:15 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:31:15 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:31:15 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:31:16 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:31:16 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:31:16 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:31:16 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:31:16 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:31:16 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:31:16 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:31:16 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:31:17 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:31:17 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:31:17 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:31:17 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@4b2dd538
+12/02/28 13:31:17 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:31:17 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:31:17 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58754
+12/02/28 13:31:17 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58754
+12/02/28 13:31:17 INFO ZK-SERVER: Established session 0xf48c152c6800001 with negotiated timeout 6000 for client /127.0.0.1:58754
+12/02/28 13:31:17 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48c152c6800001, negotiated timeout = 6000
+12/02/28 13:31:17 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-2431768333044372787.jar
+12/02/28 13:31:18 INFO EXPORT: System is not using any export functionality.
+12/02/28 13:31:18 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 13:31:18 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 13:31:18 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 13:31:18 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 13:31:18 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 13:31:18 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 13:31:18 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 13:31:18 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 13:31:18 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 13:31:18 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 13:31:18 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 13:31:18 INFO HOST: No schedule set for automated snapshots.
+12/02/28 13:31:18 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 13:31:18 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 13:31:18 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 13:31:18 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 13:31:18 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 13:31:18 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 13:31:18 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 13:31:18 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 13:31:18 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 13:31:18 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 13:31:18 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 13:31:18 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 13:31:19 INFO HOST: Server completed initialization.
+12/02/28 08:32:43 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 08:32:43 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 08:32:43 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 08:32:43 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 08:32:43 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:32:43 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:32:43 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:32:43 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:32:43 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 08:32:43 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:32:43 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 08:32:43 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:32:43 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:32:43 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:32:43 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:32:43 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:32:43 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:32:43 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 08:32:43 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:32:43 INFO COMPILER: [Insert2.class]: Compiling Statement: SELECT * FROM TEST;
+12/02/28 08:32:43 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:32:43 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 08:32:44 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:32:44 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:32:44 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 08:32:44 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 08:32:44 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 08:32:44 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 13:32:47 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:32:48 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:32:48 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:32:48 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:32:48 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:32:48 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:32:48 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:32:48 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:32:48 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:32:48 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:32:48 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:32:48 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:32:48 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:32:49 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:32:49 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@7acc7439
+12/02/28 13:32:49 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:32:49 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:32:49 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58768
+12/02/28 13:32:49 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58768
+12/02/28 13:32:49 INFO ZK-SERVER: Established session 0xf48c20618000001 with negotiated timeout 6000 for client /127.0.0.1:58768
+12/02/28 13:32:49 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48c20618000001, negotiated timeout = 6000
+12/02/28 13:32:49 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-822610197986528350.jar
+12/02/28 13:32:50 INFO EXPORT: System is not using any export functionality.
+12/02/28 13:32:50 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 13:32:50 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 13:32:50 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 13:32:50 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 13:32:50 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 13:32:50 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 13:32:50 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 13:32:50 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 13:32:50 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 13:32:50 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 13:32:50 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 13:32:50 INFO HOST: No schedule set for automated snapshots.
+12/02/28 13:32:50 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 13:32:50 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 13:32:50 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 13:32:50 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 13:32:50 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 13:32:50 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 13:32:50 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 13:32:50 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 13:32:50 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 13:32:50 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 13:32:50 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 13:32:50 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 13:32:51 INFO HOST: Server completed initialization.
+12/02/28 08:36:51 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 08:36:52 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 08:36:52 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 08:36:52 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 08:36:52 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:36:52 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:36:52 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:36:52 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:36:52 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 08:36:52 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:36:52 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 08:36:52 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:36:52 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:36:52 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:36:52 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:36:52 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:36:52 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:36:52 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 08:36:52 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:36:52 INFO COMPILER: [Insert2.class]: Compiling Statement: SELECT * FROM TEST;
+12/02/28 08:36:52 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:36:52 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 08:36:52 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:36:52 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:36:52 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 08:36:52 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 08:36:52 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 08:36:52 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 13:37:22 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:37:22 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:37:22 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:37:22 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:37:22 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:37:22 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:37:22 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:37:22 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:37:22 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:37:22 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:37:22 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:37:23 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:37:23 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:37:23 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:37:23 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@4876db09
+12/02/28 13:37:23 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:37:23 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:37:23 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58806
+12/02/28 13:37:23 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58806
+12/02/28 13:37:23 INFO ZK-SERVER: Established session 0xf48c41dfe000001 with negotiated timeout 6000 for client /127.0.0.1:58806
+12/02/28 13:37:23 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48c41dfe000001, negotiated timeout = 6000
+12/02/28 13:37:23 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-1333897275164093416.jar
+12/02/28 13:37:24 INFO EXPORT: System is not using any export functionality.
+12/02/28 13:37:24 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 13:37:24 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 13:37:24 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 13:37:24 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 13:37:24 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 13:37:24 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 13:37:24 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 13:37:24 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 13:37:24 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 13:37:24 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 13:37:24 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 13:37:25 INFO HOST: No schedule set for automated snapshots.
+12/02/28 13:37:25 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 13:37:25 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 13:37:25 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 13:37:25 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 13:37:25 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 13:37:25 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 13:37:25 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 13:37:25 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 13:37:25 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 13:37:25 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 13:37:25 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 13:37:25 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 13:37:25 INFO HOST: Server completed initialization.
+12/02/28 08:37:36 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 08:37:37 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 08:37:37 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 08:37:37 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 08:37:37 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:37:37 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:37:37 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:37:37 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 08:37:37 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 08:37:37 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:37:37 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 08:37:37 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:37:37 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:37:37 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:37:37 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:37:37 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 08:37:37 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 08:37:37 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 08:37:37 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 08:37:37 INFO COMPILER: [Insert2.class]: Compiling Statement: SELECT * FROM TEST;
+12/02/28 08:37:37 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:37:37 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 08:37:37 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 08:37:37 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 08:37:37 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 08:37:37 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 08:37:37 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 08:37:37 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/02/28 13:40:42 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/02/28 13:40:42 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/02/28 13:40:42 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:40:42 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/02/28 13:40:42 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/02/28 13:40:42 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/02/28 13:40:42 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/02/28 13:40:42 INFO HOST: URL of deployment info: deployment.xml
+12/02/28 13:40:42 INFO HOST: Beginning inter-node communication on port 3021.
+12/02/28 13:40:42 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/02/28 13:40:42 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/02/28 13:40:43 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/02/28 13:40:43 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/02/28 13:40:43 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/02/28 13:40:43 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@782cbc86
+12/02/28 13:40:43 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/02/28 13:40:43 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/02/28 13:40:43 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:58830
+12/02/28 13:40:43 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:58830
+12/02/28 13:40:43 INFO ZK-SERVER: Established session 0xf48c5a4a0800001 with negotiated timeout 6000 for client /127.0.0.1:58830
+12/02/28 13:40:43 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xf48c5a4a0800001, negotiated timeout = 6000
+12/02/28 13:40:43 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-3422910258727565752.jar
+12/02/28 13:40:44 INFO EXPORT: System is not using any export functionality.
+12/02/28 13:40:44 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/02/28 13:40:44 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/02/28 13:40:44 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/02/28 13:40:45 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/02/28 13:40:45 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/02/28 13:40:45 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/02/28 13:40:45 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/02/28 13:40:45 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/02/28 13:40:45 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/02/28 13:40:45 INFO HOST: Maximum usable Java heap set to 507 mb.
+12/02/28 13:40:45 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/02/28 13:40:45 INFO HOST: No schedule set for automated snapshots.
+12/02/28 13:40:45 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+12/02/28 13:40:45 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+12/02/28 13:40:45 INFO HOST: HOST MEMORY (MB): 4096
+12/02/28 13:40:45 INFO HOST: OS PROFILE:       Mac OS X 10.7.2 x86_64 en_US
+12/02/28 13:40:45 INFO HOST: JAVA VERSION:     1.6.0_29
+12/02/28 13:40:45 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_29-b11-402-11M3527)
+12/02/28 13:40:45 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.4-b02-402, mixed mode)
+12/02/28 13:40:45 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/02/28 13:40:45 INFO HOST:   Host id: 0 with interfaces: 192.168.51.1 192.168.253.1 192.168.1.140 21212,21211,8080 [SELF]
+12/02/28 13:40:45 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/02/28 13:40:45 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/02/28 13:40:45 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/02/28 13:40:45 INFO HOST: Server completed initialization.
+12/02/28 09:03:43 INFO COMPILER: Path to catalog helloworld.sql
+12/02/28 09:03:44 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/02/28 09:03:44 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/02/28 09:03:44 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/02/28 09:03:44 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/02/28 09:03:44 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 09:03:44 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 09:03:44 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/02/28 09:03:44 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/02/28 09:03:44 INFO COMPILER: [BatchInsert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 09:03:44 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/02/28 09:03:45 INFO COMPILER: [RegisterUser.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 09:03:45 INFO COMPILER: [SignIn.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 09:03:45 INFO COMPILER: [SignIn.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 09:03:45 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 09:03:45 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT H.HELLO, U.FIRSTNAME FROM USERACCOUNT AS U, HELLOWORLD AS H WHERE U.EMAIL = ? AND U.DIALECT = H.DIALECT;
+12/02/28 09:03:45 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: UPDATE USERACCOUNT SET lastlogin=? WHERE EMAIL = ?;
+12/02/28 09:03:45 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: SELECT * FROM HELLOWORLD;
+12/02/28 09:03:45 INFO COMPILER: [ReplicatedTable.class]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?,?,?,?,?);
+12/02/28 09:03:45 INFO COMPILER: [Insert2.class]: Compiling Statement: SELECT * FROM TEST;
+12/02/28 09:03:45 INFO COMPILER: [Insert2.class]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 09:03:45 INFO COMPILER: [Delete.class]: Compiling Statement: DELETE FROM TEST;
+12/02/28 09:03:45 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/02/28 09:03:45 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/02/28 09:03:45 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/02/28 09:03:45 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/02/28 09:03:45 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/02/28 09:03:45 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/04/16 05:32:14 INFO COMPILER: Path to catalog helloworld.sql
+12/04/16 05:32:15 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/04/16 05:32:15 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/04/16 05:32:15 DEBUG COMPILER: Creating multi-partition insert procedure for replicated table HELLOWORLD
+12/04/16 05:32:15 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/04/16 05:32:15 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:32:15 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:32:15 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:32:15 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:32:15 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/04/16 05:32:15 DEBUG COMPILER: Skipping creation of CRUD select/delete/update for partitioned table USERACCOUNT because no primary key is declared.
+12/04/16 05:32:15 INFO COMPILER: [Select.class]: Compiling Statement: SELECT * FROM TEST WHERE A = ? OR A = ?
+12/04/16 05:32:15 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/04/16 05:32:15 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/04/16 05:32:15 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/04/16 05:32:16 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/04/16 05:32:16 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/04/16 05:32:16 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/04/16 05:32:16 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/04/16 05:34:44 INFO COMPILER: Path to catalog helloworld.sql
+12/04/16 05:34:44 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/04/16 05:34:44 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/04/16 05:34:44 DEBUG COMPILER: Creating multi-partition insert procedure for replicated table HELLOWORLD
+12/04/16 05:34:44 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/04/16 05:34:44 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:34:44 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:34:44 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:34:44 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:34:44 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/04/16 05:34:44 DEBUG COMPILER: Skipping creation of CRUD select/delete/update for partitioned table USERACCOUNT because no primary key is declared.
+12/04/16 05:34:44 INFO COMPILER: [Select.class]: Compiling Statement: SELECT * FROM TEST WHERE A = ? OR A = ?
+12/04/16 05:34:45 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/04/16 05:34:45 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/04/16 05:34:45 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/04/16 05:34:45 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/04/16 05:34:45 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/04/16 05:34:45 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/04/16 05:34:45 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);
+12/04/16 09:34:46 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/04/16 09:34:46 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/04/16 09:34:46 INFO HOST: URL of deployment info: deployment.xml
+12/04/16 09:34:46 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/04/16 09:34:46 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/04/16 09:34:46 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/04/16 09:34:46 INFO HOST: Using "/Users/wwgong/voltdb-2.1.3/examples/helloworld-replicated/voltdbroot" for voltdbroot directory.
+12/04/16 09:34:46 INFO HOST: URL of deployment info: deployment.xml
+12/04/16 09:34:46 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/04/16 09:34:46 INFO HOST: Beginning inter-node communication on port 3021.
+12/04/16 09:34:46 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/04/16 09:34:46 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/04/16 09:34:48 TRACE HOST: Creating local site 0
+12/04/16 09:34:48 TRACE HOST: Creating local site 1
+12/04/16 09:34:48 TRACE HOST: Creating local site 2
+12/04/16 09:34:48 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/04/16 09:34:48 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/04/16 09:34:48 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/04/16 09:34:48 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@349b688e
+12/04/16 09:34:48 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/04/16 09:34:48 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/04/16 09:34:48 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:57305
+12/04/16 09:34:48 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:57305
+12/04/16 09:34:48 INFO ZK-SERVER: Established session 0xfc3edb28e800001 with negotiated timeout 6000 for client /127.0.0.1:57305
+12/04/16 09:34:48 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xfc3edb28e800001, negotiated timeout = 6000
+12/04/16 09:34:48 DEBUG HOST: Gathered 0 snapshot information
+12/04/16 09:34:48 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/04/16 09:34:48 DEBUG HOST: There are 0 snapshots available in the cluster
+12/04/16 09:34:48 DEBUG HOST: Sending 8697 catalog bytes
+12/04/16 09:34:48 DEBUG HOST: Got a catalog!
+12/04/16 09:34:48 DEBUG HOST: Got 8697 catalog bytes
+12/04/16 09:34:48 INFO HOST: Loading application catalog jarfile from /private/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/catalog-host0-9160970511408331234.jar
+12/04/16 09:34:49 INFO EXPORT: System is not using any export functionality.
+12/04/16 09:34:49 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/04/16 09:34:49 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/04/16 09:34:49 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/04/16 09:34:49 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/04/16 05:39:58 INFO COMPILER: Path to catalog helloworld.sql
+12/04/16 05:39:58 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/04/16 05:39:58 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10025_10026 on table: TEST of type: BALANCED_TREE
+12/04/16 05:39:58 DEBUG COMPILER: Creating multi-partition insert procedure for replicated table HELLOWORLD
+12/04/16 05:39:58 INFO COMPILER: Synthesized built-in INSERT multi-partition procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD
+12/04/16 05:39:58 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO TEST VALUES (?, ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:39:58 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:39:58 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM TEST WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:39:58 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE TEST SET A = ?, B = ? WHERE (A = ?); for TEST with partitioning: TEST.A:0
+12/04/16 05:39:58 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?); for USERACCOUNT with partitioning: USERACCOUNT.EMAIL:0
+12/04/16 05:39:58 DEBUG COMPILER: Skipping creation of CRUD select/delete/update for partitioned table USERACCOUNT because no primary key is declared.
+12/04/16 05:39:58 INFO COMPILER: [Select.class]: Compiling Statement: SELECT * FROM TEST WHERE A = ? OR A = ?
+12/04/16 05:39:58 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/04/16 05:39:58 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/04/16 05:39:58 INFO COMPILER: [TEST.insert]: Compiling Statement: INSERT INTO TEST VALUES (?, ?);
+12/04/16 05:39:58 INFO COMPILER: [TEST.select]: Compiling Statement: SELECT * FROM TEST WHERE (A = ?);
+12/04/16 05:39:58 INFO COMPILER: [TEST.delete]: Compiling Statement: DELETE FROM TEST WHERE (A = ?);
+12/04/16 05:39:58 INFO COMPILER: [TEST.update]: Compiling Statement: UPDATE TEST SET A = ?, B = ? WHERE (A = ?);
+12/04/16 05:39:58 INFO COMPILER: [USERACCOUNT.insert]: Compiling Statement: INSERT INTO USERACCOUNT VALUES (?, ?, ?, ?, ?);

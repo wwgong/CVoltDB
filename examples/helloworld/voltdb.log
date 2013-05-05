@@ -1,0 +1,567 @@
+11/09/18 21:23:20 INFO COMPILER: Path to catalog helloworld.sql
+11/09/18 21:23:20 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+11/09/18 21:23:20 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+11/09/18 21:23:20 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+11/09/19 01:23:24 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+11/09/19 01:23:24 INFO HOST: Build: 1.3.6 http://svnmirror.voltdb.com/eng/tags/voltdb-1.3.6?revision=2355-dirty Community Edition
+11/09/19 01:23:24 INFO HOST: Loading application catalog jarfile from /Users/wwgong/voltdb-1.3.6/examples/helloworld/helloworld.jar
+11/09/19 01:23:24 INFO HOST: URL of deployment info: deployment.xml
+11/09/19 01:23:24 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+11/09/19 01:23:24 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+11/09/19 01:23:24 INFO HOST: Detection of network partitions in the cluster is not enabled.
+11/09/19 01:23:24 INFO HOST: Creating voltdbroot directory: /Users/wwgong/voltdb-1.3.6/examples/helloworld/voltdbroot
+11/09/19 01:23:24 INFO HOST: Using "/Users/wwgong/voltdb-1.3.6/examples/helloworld/voltdbroot" for voltdbroot directory.
+11/09/19 01:23:24 INFO HOST: Creating snapshot directory: /Users/wwgong/voltdb-1.3.6/examples/helloworld/voltdbroot/snapshots
+11/09/19 01:23:24 INFO HOST: Creating export overflow directory: /Users/wwgong/voltdb-1.3.6/examples/helloworld/voltdbroot/export_overflow
+11/09/19 01:23:24 INFO HOST: Beginning inter-node communication on port 3021.
+11/09/19 01:23:25 INFO HOST: Connecting to VoltDB cluster as the leader...
+11/09/19 01:23:25 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+11/09/19 01:23:25 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+11/09/19 01:23:25 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+11/09/19 01:23:25 INFO EXPORT: System is not using any export functionality.
+11/09/19 01:23:25 INFO HOST: Loading native VoltDB code (voltdb-1.3.6). A confirmation message will follow if the loading is successful.
+11/09/19 01:23:25 INFO HOST: Successfully loaded native VoltDB library voltdb-1.3.6.
+11/09/19 01:23:25 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+11/09/19 01:23:25 INFO HOST: Starting the network subsystem with 1 worker threads.
+11/09/19 01:23:25 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@1d417690
+11/09/19 01:23:25 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+11/09/19 01:23:25 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+11/09/19 01:23:25 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:51562
+11/09/19 01:23:25 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:51562
+11/09/19 01:23:25 INFO ZK-SERVER: Established session 0xda6510660000001 with negotiated timeout 6000 for client /127.0.0.1:51562
+11/09/19 01:23:25 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0xda6510660000001, negotiated timeout = 6000
+11/09/19 01:23:25 INFO HOST: Start database. Will create a new database if there is nothing to recover from.
+11/09/19 01:23:25 INFO HOST: Listening for native wire protocol clients on port 21212.
+11/09/19 01:23:25 INFO HOST: Listening for admin wire protocol clients on port 21211.
+11/09/19 01:23:25 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+11/09/19 01:23:25 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+11/09/19 01:23:25 INFO HOST: Available JVM arguments: -Xserver -Djava.library.path=/Users/wwgong/voltdb-1.3.6/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///Users/wwgong/voltdb-1.3.6/obj/release/dist/voltdb/log4j.properties -da
+11/09/19 01:23:25 INFO HOST: Maximum usable Java heap set to 507 mb.
+11/09/19 01:23:25 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+11/09/19 01:23:25 INFO HOST: No schedule set for automated snapshots.
+11/09/19 01:23:25 INFO HOST: CPU INFO:         2 Cores, 1 Sockets, 2 Hardware Threads
+11/09/19 01:23:25 INFO HOST: CPU DESC:         Intel Core 2 Duo 2.4 GHz
+11/09/19 01:23:25 INFO HOST: HOST MEMORY (MB): 4096
+11/09/19 01:23:25 INFO HOST: OS PROFILE:       Mac OS X 10.6.8 x86_64 en_US
+11/09/19 01:23:25 INFO HOST: JAVA VERSION:     1.6.0_26
+11/09/19 01:23:25 INFO HOST: JAVA RUNTIME:     Java(TM) SE Runtime Environment (1.6.0_26-b03-384-10M3425)
+11/09/19 01:23:25 INFO HOST: JAVA VM:          Java HotSpot(TM) 64-Bit Server VM (20.1-b02-384, mixed mode)
+11/09/19 01:23:25 INFO HOST: About to list cluster interfaces for all nodes with format ip:client-port:admin-port:http-port
+11/09/19 01:23:25 INFO HOST:   Host id: 0 with interfaces: 192.168.1.102:21212:21211:8080 [SELF]
+11/09/19 01:23:25 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+11/09/19 01:23:26 INFO HOST: Server completed initialization.
+12/07/31 18:52:25 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 18:52:26 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 18:52:26 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:52:26 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:52:26 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:52:26 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:52:26 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:52:26 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 18:52:26 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:52:26 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:52:26 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:52:26 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 22:52:27 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 22:52:27 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 22:52:27 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:52:27 ERROR HOST: Error schema validating deployment.xml file. cvc-complex-type.3.2.2: Attribute 'leader' is not allowed to appear in element 'cluster'.
+12/07/31 22:52:27 ERROR HOST: Not a valid XML deployment file at URL: deployment.xml
+12/07/31 22:52:27 FATAL HOST: Unexpected crash
+12/07/31 22:52:27 FATAL HOST: Stack trace from crashVoltDB() method:
+java.lang.Thread.dumpThreads(Native Method)
+java.lang.Thread.getAllStackTraces(Thread.java:1546)
+org.voltdb.VoltDB.crashLocalVoltDB(VoltDB.java:443)
+org.voltdb.VoltDB.crashVoltDB(VoltDB.java:419)
+org.voltdb.RealVoltDB.readDeploymentAndCreateStarterCatalogContext(RealVoltDB.java:551)
+org.voltdb.RealVoltDB.initialize(RealVoltDB.java:307)
+org.voltdb.VoltDB.initialize(VoltDB.java:509)
+org.voltdb.VoltDB.main(VoltDB.java:491)
+
+12/07/31 18:52:51 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 18:52:51 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 18:52:51 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:52:51 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:52:51 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:52:51 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:52:51 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:52:51 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 18:52:51 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:52:51 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:52:51 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:52:51 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 22:52:52 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 22:52:52 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 22:52:52 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:52:52 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/07/31 22:52:52 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/07/31 22:52:52 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/07/31 22:52:52 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/07/31 22:52:52 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:52:52 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/07/31 22:52:52 INFO HOST: Beginning inter-node communication on port 3021.
+12/07/31 22:52:52 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/07/31 22:52:52 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/07/31 22:52:52 TRACE HOST: Creating local site 0
+12/07/31 22:52:52 TRACE HOST: Creating local site 1
+12/07/31 22:52:52 TRACE HOST: Creating local site 2
+12/07/31 22:52:52 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/07/31 22:52:52 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/07/31 22:52:52 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/07/31 22:52:52 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@5b0d95cd
+12/07/31 22:52:52 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/07/31 22:52:52 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/07/31 22:52:52 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:50352
+12/07/31 22:52:52 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:50352
+12/07/31 22:52:52 INFO ZK-SERVER: Established session 0x10d64c12b7000001 with negotiated timeout 6000 for client /127.0.0.1:50352
+12/07/31 22:52:52 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10d64c12b7000001, negotiated timeout = 6000
+12/07/31 22:52:53 DEBUG HOST: Gathered 0 snapshot information
+12/07/31 22:52:53 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/07/31 22:52:53 DEBUG HOST: There are 0 snapshots available in the cluster
+12/07/31 22:52:53 DEBUG HOST: Sending 7154 catalog bytes
+12/07/31 22:52:53 DEBUG HOST: Got a catalog!
+12/07/31 22:52:53 DEBUG HOST: Got 7154 catalog bytes
+12/07/31 22:52:53 INFO HOST: Loading application catalog jarfile from /tmp/catalog-host0-1013762636817148919.jar
+12/07/31 22:52:53 INFO EXPORT: System is not using any export functionality.
+12/07/31 22:52:53 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/07/31 22:52:53 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/07/31 22:52:53 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/07/31 22:52:53 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/07/31 22:52:53 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/07/31 22:52:53 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/07/31 22:52:53 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/07/31 22:52:53 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/07/31 22:52:53 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/07/31 22:52:53 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/07/31 22:52:53 INFO HOST: Available JVM arguments: -Djava.library.path=/home/voltdb/development/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///home/voltdb/development/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/07/31 22:52:53 INFO HOST: Maximum usable Java heap set to 455 mb.
+12/07/31 22:52:53 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/07/31 22:52:53 INFO HOST: No schedule set for automated snapshots.
+12/07/31 22:52:53 INFO HOST: CPU INFO:         4 Cores, 1 Sockets, 4 Hardware Threads
+12/07/31 22:52:53 INFO HOST: CPU DESC:         Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz 6144 KB cache
+12/07/31 22:52:53 INFO HOST: HOST MEMORY (MB): 16014
+12/07/31 22:52:53 INFO HOST: OS PROFILE:       Linux 3.2.0-26-generic amd64 en_US
+12/07/31 22:52:53 INFO HOST: JAVA VERSION:     1.6.0_24
+12/07/31 22:52:53 INFO HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.6.0_24-b24)
+12/07/31 22:52:53 INFO HOST: JAVA VM:          OpenJDK 64-Bit Server VM (20.0-b12, mixed mode)
+12/07/31 22:52:53 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/07/31 22:52:53 INFO HOST:   Host id: 0 with interfaces: 192.168.1.118 21212,21211,8080 [SELF]
+12/07/31 22:52:53 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/07/31 22:52:53 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/07/31 22:52:53 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/07/31 22:52:53 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/07/31 22:52:53 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/07/31 22:52:53 DEBUG HOST: Waiting for all hosts to complete restore
+12/07/31 22:52:53 INFO HOST: Server completed initialization.
+12/07/31 18:55:06 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 18:55:07 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 18:55:07 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:55:07 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:55:07 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:55:07 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:55:07 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:55:07 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 18:55:07 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:55:07 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:55:07 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:55:07 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 22:55:07 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 22:55:07 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 22:55:07 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:55:08 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/07/31 22:55:08 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/07/31 22:55:08 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/07/31 22:55:08 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/07/31 22:55:08 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:55:08 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/07/31 22:55:08 INFO HOST: Beginning inter-node communication on port 3021.
+12/07/31 22:55:08 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/07/31 22:55:08 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/07/31 22:55:08 TRACE HOST: Creating local site 0
+12/07/31 22:55:08 TRACE HOST: Creating local site 1
+12/07/31 22:55:08 TRACE HOST: Creating local site 2
+12/07/31 22:55:08 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/07/31 22:55:08 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/07/31 22:55:08 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/07/31 22:55:08 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@5b0d95cd
+12/07/31 22:55:08 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/07/31 22:55:08 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/07/31 22:55:08 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:50357
+12/07/31 22:55:08 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:50357
+12/07/31 22:55:08 INFO ZK-SERVER: Established session 0x10d64d1b2d000001 with negotiated timeout 6000 for client /127.0.0.1:50357
+12/07/31 22:55:08 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10d64d1b2d000001, negotiated timeout = 6000
+12/07/31 22:55:08 DEBUG HOST: Gathered 0 snapshot information
+12/07/31 22:55:08 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/07/31 22:55:08 DEBUG HOST: There are 0 snapshots available in the cluster
+12/07/31 22:55:08 DEBUG HOST: Sending 7153 catalog bytes
+12/07/31 22:55:08 DEBUG HOST: Got a catalog!
+12/07/31 22:55:08 DEBUG HOST: Got 7153 catalog bytes
+12/07/31 22:55:08 INFO HOST: Loading application catalog jarfile from /tmp/catalog-host0-3728762323918787193.jar
+12/07/31 22:55:08 INFO EXPORT: System is not using any export functionality.
+12/07/31 22:55:08 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/07/31 22:55:08 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/07/31 22:55:08 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/07/31 22:55:08 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/07/31 22:55:08 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/07/31 22:55:08 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/07/31 22:55:08 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/07/31 22:55:08 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/07/31 22:55:08 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/07/31 22:55:08 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/07/31 22:55:08 INFO HOST: Available JVM arguments: -Djava.library.path=/home/voltdb/development/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///home/voltdb/development/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/07/31 22:55:08 INFO HOST: Maximum usable Java heap set to 455 mb.
+12/07/31 22:55:08 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/07/31 22:55:08 INFO HOST: No schedule set for automated snapshots.
+12/07/31 22:55:08 INFO HOST: CPU INFO:         4 Cores, 1 Sockets, 4 Hardware Threads
+12/07/31 22:55:08 INFO HOST: CPU DESC:         Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz 6144 KB cache
+12/07/31 22:55:08 INFO HOST: HOST MEMORY (MB): 16014
+12/07/31 22:55:08 INFO HOST: OS PROFILE:       Linux 3.2.0-26-generic amd64 en_US
+12/07/31 22:55:08 INFO HOST: JAVA VERSION:     1.6.0_24
+12/07/31 22:55:08 INFO HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.6.0_24-b24)
+12/07/31 22:55:08 INFO HOST: JAVA VM:          OpenJDK 64-Bit Server VM (20.0-b12, mixed mode)
+12/07/31 22:55:08 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/07/31 22:55:08 INFO HOST:   Host id: 0 with interfaces: 192.168.1.118 21212,21211,8080 [SELF]
+12/07/31 22:55:08 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/07/31 22:55:08 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/07/31 22:55:08 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/07/31 22:55:08 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/07/31 22:55:08 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/07/31 22:55:08 DEBUG HOST: Waiting for all hosts to complete restore
+12/07/31 22:55:09 INFO HOST: Server completed initialization.
+12/07/31 22:56:14 ERROR HOST: Runtime exception in ExecutionSite::run()
+java.lang.NullPointerException
+	at org.voltdb.ExecutionSite.completeFinishedTxns(ExecutionSite.java:2238)
+	at org.voltdb.ExecutionSite.recursableRun(ExecutionSite.java:2307)
+	at org.voltdb.ExecutionSite.run(ExecutionSite.java:1204)
+	at org.voltdb.RealVoltDB.run(RealVoltDB.java:1127)
+	at org.voltdb.VoltDB.main(VoltDB.java:492)
+12/07/31 22:56:14 FATAL HOST: ExecutionSite: 1 encountered an unexpected error and will die, taking this VoltDB node down.
+java.lang.NullPointerException
+	at org.voltdb.ExecutionSite.completeFinishedTxns(ExecutionSite.java:2238)
+	at org.voltdb.ExecutionSite.recursableRun(ExecutionSite.java:2307)
+	at org.voltdb.ExecutionSite.run(ExecutionSite.java:1204)
+	at org.voltdb.RealVoltDB.run(RealVoltDB.java:1127)
+	at org.voltdb.VoltDB.main(VoltDB.java:492)
+12/07/31 22:56:14 FATAL HOST: Unexpected crash
+12/07/31 22:56:14 FATAL HOST: Stack trace from crashVoltDB() method:
+java.lang.Thread.dumpThreads(Native Method)
+java.lang.Thread.getAllStackTraces(Thread.java:1546)
+org.voltdb.VoltDB.crashLocalVoltDB(VoltDB.java:443)
+org.voltdb.VoltDB.crashVoltDB(VoltDB.java:419)
+org.voltdb.RealVoltDB.run(RealVoltDB.java:1137)
+org.voltdb.VoltDB.main(VoltDB.java:492)
+
+12/07/31 18:57:43 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 18:57:43 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 18:57:43 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:57:43 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:57:43 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:57:43 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:57:43 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:57:43 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 18:57:43 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:57:43 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:57:43 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:57:43 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 22:57:44 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 22:57:44 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 22:57:44 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:57:44 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/07/31 22:57:44 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/07/31 22:57:44 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/07/31 22:57:44 INFO HOST: Creating voltdbroot directory: /home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot
+12/07/31 22:57:44 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/07/31 22:57:44 INFO HOST: Creating snapshot directory: /home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot/snapshots
+12/07/31 22:57:44 INFO HOST: Creating export overflow directory: /home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot/export_overflow
+12/07/31 22:57:44 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:57:44 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/07/31 22:57:44 INFO HOST: Beginning inter-node communication on port 3021.
+12/07/31 22:57:44 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/07/31 22:57:44 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/07/31 22:57:44 INFO HOST: HTTP admin console unable to bind to port 8080. Exiting.
+12/07/31 18:59:55 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 18:59:55 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 18:59:55 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:59:55 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:59:55 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 18:59:55 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 18:59:55 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:59:55 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 18:59:55 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 18:59:55 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:59:55 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 18:59:55 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 22:59:56 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 22:59:56 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 22:59:56 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:59:56 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/07/31 22:59:56 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/07/31 22:59:56 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/07/31 22:59:56 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/07/31 22:59:56 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 22:59:56 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/07/31 22:59:56 INFO HOST: Beginning inter-node communication on port 3021.
+12/07/31 22:59:56 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/07/31 22:59:56 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/07/31 22:59:56 INFO HOST: HTTP admin console unable to bind to port 8080. Exiting.
+12/07/31 19:06:01 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 19:06:02 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 19:06:02 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 19:06:02 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 19:06:02 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 19:06:02 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 19:06:02 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 19:06:02 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 19:06:02 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 19:06:02 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 19:06:02 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 19:06:02 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 23:06:02 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 23:06:02 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 23:06:02 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 23:06:03 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/07/31 23:06:03 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/07/31 23:06:03 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/07/31 23:06:03 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/07/31 23:06:03 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 23:06:03 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/07/31 23:06:03 INFO HOST: Beginning inter-node communication on port 3021.
+12/07/31 23:06:03 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/07/31 23:06:03 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/07/31 23:06:03 TRACE HOST: Creating local site 0
+12/07/31 23:06:03 TRACE HOST: Creating local site 1
+12/07/31 23:06:03 TRACE HOST: Creating local site 2
+12/07/31 23:06:03 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/07/31 23:06:03 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/07/31 23:06:03 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/07/31 23:06:03 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@731de9b
+12/07/31 23:06:03 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/07/31 23:06:03 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/07/31 23:06:03 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:50411
+12/07/31 23:06:03 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:50411
+12/07/31 23:06:03 INFO ZK-SERVER: Established session 0x10d6521a81800001 with negotiated timeout 6000 for client /127.0.0.1:50411
+12/07/31 23:06:03 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x10d6521a81800001, negotiated timeout = 6000
+12/07/31 23:06:03 DEBUG HOST: Gathered 0 snapshot information
+12/07/31 23:06:03 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/07/31 23:06:03 DEBUG HOST: There are 0 snapshots available in the cluster
+12/07/31 23:06:03 DEBUG HOST: Sending 7154 catalog bytes
+12/07/31 23:06:03 DEBUG HOST: Got a catalog!
+12/07/31 23:06:03 DEBUG HOST: Got 7154 catalog bytes
+12/07/31 23:06:03 INFO HOST: Loading application catalog jarfile from /tmp/catalog-host0-353788869963168646.jar
+12/07/31 23:06:03 INFO EXPORT: System is not using any export functionality.
+12/07/31 23:06:03 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/07/31 23:06:03 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/07/31 23:06:03 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/07/31 23:06:03 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/07/31 23:06:03 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/07/31 23:06:03 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/07/31 23:06:03 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/07/31 23:06:03 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/07/31 23:06:03 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/07/31 23:06:03 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/07/31 23:06:03 INFO HOST: Available JVM arguments: -Djava.library.path=/home/voltdb/development/voltdb-2.1.3/obj/release/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///home/voltdb/development/voltdb-2.1.3/obj/release/dist/voltdb/log4j.properties -da
+12/07/31 23:06:03 INFO HOST: Maximum usable Java heap set to 455 mb.
+12/07/31 23:06:03 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/07/31 23:06:03 INFO HOST: No schedule set for automated snapshots.
+12/07/31 23:06:03 INFO HOST: CPU INFO:         4 Cores, 1 Sockets, 4 Hardware Threads
+12/07/31 23:06:03 INFO HOST: CPU DESC:         Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz 6144 KB cache
+12/07/31 23:06:03 INFO HOST: HOST MEMORY (MB): 16014
+12/07/31 23:06:03 INFO HOST: OS PROFILE:       Linux 3.2.0-26-generic amd64 en_US
+12/07/31 23:06:03 INFO HOST: JAVA VERSION:     1.6.0_24
+12/07/31 23:06:03 INFO HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.6.0_24-b24)
+12/07/31 23:06:03 INFO HOST: JAVA VM:          OpenJDK 64-Bit Server VM (20.0-b12, mixed mode)
+12/07/31 23:06:03 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/07/31 23:06:03 INFO HOST:   Host id: 0 with interfaces: 192.168.1.118 21212,21211,8080 [SELF]
+12/07/31 23:06:03 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/07/31 23:06:03 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/07/31 23:06:03 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/07/31 23:06:03 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/07/31 23:06:03 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/07/31 23:06:03 DEBUG HOST: Waiting for all hosts to complete restore
+12/07/31 23:06:04 INFO HOST: Server completed initialization.
+12/07/31 19:06:06 INFO COMPILER: Path to catalog helloworld.sql
+12/07/31 19:06:06 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/07/31 19:06:06 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 19:06:06 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 19:06:06 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/07/31 19:06:06 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/07/31 19:06:06 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 19:06:06 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/07/31 19:06:06 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/07/31 19:06:06 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 19:06:06 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/07/31 19:06:06 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/07/31 23:06:07 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/07/31 23:06:07 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/07/31 23:06:07 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 23:06:08 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/07/31 23:06:08 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/07/31 23:06:08 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/07/31 23:06:08 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/07/31 23:06:08 INFO HOST: URL of deployment info: deployment.xml
+12/07/31 23:06:08 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/07/31 23:06:08 INFO HOST: Beginning inter-node communication on port 3021.
+12/07/31 23:06:08 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/07/31 23:06:08 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/07/31 23:06:08 INFO HOST: HTTP admin console unable to bind to port 8080. Exiting.
+12/07/31 23:06:11 DEBUG NETWORK: Closing channel org.voltdb.network.VoltPort@3aaa3518:localhost/127.0.0.1:50429
+12/09/28 08:59:16 INFO COMPILER: Path to catalog helloworld.sql
+12/09/28 08:59:16 INFO COMPILER: [project.xml]: Created index: SYS_IDX_SYS_PK_10018_10019 on table: HELLOWORLD of type: BALANCED_TREE
+12/09/28 08:59:16 INFO COMPILER: Synthesized built-in INSERT procedure: INSERT INTO HELLOWORLD VALUES (?, ?, ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/09/28 08:59:16 INFO COMPILER: Synthesized built-in SELECT procedure: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/09/28 08:59:16 INFO COMPILER: Synthesized built-in DELETE procedure: DELETE FROM HELLOWORLD WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:0
+12/09/28 08:59:16 INFO COMPILER: Synthesized built-in UPDATE procedure: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?); for HELLOWORLD with partitioning: HELLOWORLD.DIALECT:2
+12/09/28 08:59:16 INFO COMPILER: [Insert.class]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/09/28 08:59:16 INFO COMPILER: [Select.class]: Compiling Statement: SELECT HELLO, WORLD FROM HELLOWORLD  WHERE DIALECT = ?;
+12/09/28 08:59:16 INFO COMPILER: [HELLOWORLD.insert]: Compiling Statement: INSERT INTO HELLOWORLD VALUES (?, ?, ?);
+12/09/28 08:59:16 INFO COMPILER: [HELLOWORLD.select]: Compiling Statement: SELECT * FROM HELLOWORLD WHERE (DIALECT = ?);
+12/09/28 08:59:16 INFO COMPILER: [HELLOWORLD.delete]: Compiling Statement: DELETE FROM HELLOWORLD WHERE (DIALECT = ?);
+12/09/28 08:59:16 INFO COMPILER: [HELLOWORLD.update]: Compiling Statement: UPDATE HELLOWORLD SET HELLO = ?, WORLD = ?, DIALECT = ? WHERE (DIALECT = ?);
+12/09/28 12:59:24 INFO HOST: Initializing VoltDB...
+
+ _    __      ____  ____  ____ 
+| |  / /___  / / /_/ __ \/ __ )
+| | / / __ \/ / __/ / / / __  |
+| |/ / /_/ / / /_/ /_/ / /_/ / 
+|___/\____/_/\__/_____/_____/
+
+--------------------------------
+
+12/09/28 12:59:24 INFO HOST: Build: 2.1.3 This is not from a known repository Community Edition
+12/09/28 12:59:24 INFO HOST: URL of deployment info: deployment.xml
+12/09/28 12:59:24 INFO HOST: Cluster has 1 hosts with leader hostname: "localhost". 2 sites per host. K = 0.
+12/09/28 12:59:24 INFO HOST: The entire cluster has 1 copy of each of the 2 logical partitions.
+12/09/28 12:59:24 INFO HOST: Detection of network partitions in the cluster is not enabled.
+12/09/28 12:59:24 INFO HOST: Creating voltdbroot directory: /home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot
+12/09/28 12:59:24 INFO HOST: Using "/home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot" for voltdbroot directory.
+12/09/28 12:59:24 INFO HOST: Creating snapshot directory: /home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot/snapshots
+12/09/28 12:59:24 INFO HOST: Creating export overflow directory: /home/voltdb/development/voltdb-2.1.3/examples/helloworld/voltdbroot/export_overflow
+12/09/28 12:59:24 INFO HOST: URL of deployment info: deployment.xml
+12/09/28 12:59:24 TRACE HOST: Creating host manager for 1 hosts using leader localhost/127.0.0.1.
+12/09/28 12:59:24 INFO HOST: Beginning inter-node communication on port 3021.
+12/09/28 12:59:24 INFO HOST: Connecting to VoltDB cluster as the leader...
+12/09/28 12:59:24 INFO HOST: Maximum clock/network skew is 0 milliseconds (according to leader)
+12/09/28 12:59:25 TRACE HOST: Creating local site 0
+12/09/28 12:59:25 TRACE HOST: Creating local site 1
+12/09/28 12:59:25 TRACE HOST: Creating local site 2
+12/09/28 12:59:25 INFO ZK-SERVER: binding to port /127.0.0.1:2181
+12/09/28 12:59:25 INFO ZK-SERVER: Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000
+12/09/28 12:59:25 INFO HOST: Starting the network subsystem with 1 worker threads.
+12/09/28 12:59:25 INFO ZK-SERVER: Initiating client connection, connectString=127.0.0.1:2181 sessionTimeout=2000 watcher=org.voltdb.agreement.ZKUtil$1@734b84c7
+12/09/28 12:59:25 INFO ZK-CLIENT: Opening socket connection to server /127.0.0.1:2181
+12/09/28 12:59:25 INFO ZK-CLIENT: Socket connection established to localhost/127.0.0.1:2181, initiating session
+12/09/28 12:59:25 INFO ZK-SERVER: Accepted socket connection from /127.0.0.1:60299
+12/09/28 12:59:25 INFO ZK-SERVER: Client attempting to establish new session at /127.0.0.1:60299
+12/09/28 12:59:25 INFO ZK-SERVER: Established session 0x116d280225800001 with negotiated timeout 6000 for client /127.0.0.1:60299
+12/09/28 12:59:25 INFO ZK-CLIENT: Session establishment complete on server localhost/127.0.0.1:2181, sessionid = 0x116d280225800001, negotiated timeout = 6000
+12/09/28 12:59:25 DEBUG HOST: Gathered 0 snapshot information
+12/09/28 12:59:25 DEBUG HOST: Waiting for all hosts to send their snapshot information
+12/09/28 12:59:25 DEBUG HOST: There are 0 snapshots available in the cluster
+12/09/28 12:59:25 DEBUG HOST: Sending 7167 catalog bytes
+12/09/28 12:59:25 DEBUG HOST: Got a catalog!
+12/09/28 12:59:25 DEBUG HOST: Got 7167 catalog bytes
+12/09/28 12:59:25 INFO HOST: Loading application catalog jarfile from /tmp/catalog-host0-994539362330719211.jar
+12/09/28 12:59:25 INFO EXPORT: System is not using any export functionality.
+12/09/28 12:59:25 TRACE HOST: ExecutionSite initializing (siteid 1)
+12/09/28 12:59:25 TRACE HOST: ExecutionSite initializing (siteid 2)
+12/09/28 12:59:25 INFO HOST: Loading native VoltDB code (voltdb-2.1.3). A confirmation message will follow if the loading is successful.
+12/09/28 12:59:25 INFO HOST: Successfully loaded native VoltDB library voltdb-2.1.3.
+12/09/28 12:59:25 INFO HOST: Initializing initiator ID: 1, SiteID: 0
+12/09/28 12:59:25 INFO HOST: Database start action is Start. Will create a new database if there is nothing to recover from.
+12/09/28 12:59:25 INFO HOST: Listening for native wire protocol clients on port 21212.
+12/09/28 12:59:25 INFO HOST: Listening for admin wire protocol clients on port 21211.
+12/09/28 12:59:25 INFO HOST: Local machine HTTP monitoring is listening on port 8080.
+12/09/28 12:59:25 INFO HOST: Json API over HTTP enabled at path /api/1.0/, listening on port 8080.
+12/09/28 12:59:25 INFO HOST: Available JVM arguments: -Djava.library.path=/home/voltdb/development/voltdb-2.1.3/obj/memcheck/dist/voltdb -Xmx512m -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/tmp -XX:-ReduceInitialCardMarks -Dlog4j.configuration=file:///home/voltdb/development/voltdb-2.1.3/obj/memcheck/dist/voltdb/log4j.properties -da
+12/09/28 12:59:25 INFO HOST: Maximum usable Java heap set to 455 mb.
+12/09/28 12:59:25 INFO HOST: Client authentication is not enabled. Anonymous clients accepted.
+12/09/28 12:59:25 INFO HOST: No schedule set for automated snapshots.
+12/09/28 12:59:25 INFO HOST: CPU INFO:         4 Cores, 1 Sockets, 4 Hardware Threads
+12/09/28 12:59:25 INFO HOST: CPU DESC:         Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz 6144 KB cache
+12/09/28 12:59:25 INFO HOST: HOST MEMORY (MB): 16014
+12/09/28 12:59:25 INFO HOST: OS PROFILE:       Linux 3.2.0-31-generic amd64 en_US
+12/09/28 12:59:25 INFO HOST: JAVA VERSION:     1.6.0_24
+12/09/28 12:59:25 INFO HOST: JAVA RUNTIME:     OpenJDK Runtime Environment (1.6.0_24-b24)
+12/09/28 12:59:25 INFO HOST: JAVA VM:          OpenJDK 64-Bit Server VM (20.0-b12, mixed mode)
+12/09/28 12:59:25 INFO HOST: About to list cluster interfaces for all nodes with format [ip1 ip2 ... ipN] client-port:admin-port:http-port
+12/09/28 12:59:25 INFO HOST:   Host id: 0 with interfaces: 192.168.1.145 21212,21211,8080 [SELF]
+12/09/28 12:59:25 WARN HOST: Running without redundancy (k=0) is not recommended for production use.
+12/09/28 12:59:25 INFO LOGGING: Starting leader election for snapshot truncation daemon
+12/09/28 12:59:25 DEBUG HOST: Sending snapshot ID 0 for restore to other nodes
+12/09/28 12:59:25 DEBUG HOST: Waiting for the initiator to send the snapshot txnid
+12/09/28 12:59:25 INFO LOGGING: This node was selected as the leader for snapshot truncation
+12/09/28 12:59:25 DEBUG HOST: Waiting for all hosts to complete restore
+12/09/28 12:59:25 INFO HOST: Server completed initialization.
+12/09/28 12:59:29 DEBUG NETWORK: Closing channel org.voltdb.network.VoltPort@3253abbb:localhost/127.0.0.1:39958

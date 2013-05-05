@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld
+END
+Select.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/Select.java
+END
+deployment.xml
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/deployment.xml
+END
+Insert.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/Insert.java
+END
+project.xml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/project.xml
+END
+helloworld.sql
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/helloworld.sql
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/README
+END
+Client.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/Client.java
+END
+build.xml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/eng/!svn/ver/2163/tags/voltdb-1.3.6/examples/helloworld/build.xml
+END

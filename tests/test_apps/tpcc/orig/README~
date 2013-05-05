@@ -1,0 +1,38 @@
+TPC_B for VoltDB and CVoltDB, as of 1/26/13
+
+Sources: set up for CVoltdb here.
+To run with VoltDB:
+Copy everything to another directory
+Replace tpcbprocedures:
+rm -r src/com/tpcbprocedures
+mv src1/com/tpcbprocedures src/com
+
+If using Voltdb 3.0, change src/com/TPCCLoader.java's import of org.voltdb.Pair
+   to import of org.voltcore.Pair
+
+To run with Voltdb or CVoltdb at ../spot
+
+To run server:
+Single Host: uses deployment.xml
+bash run_tpcbx.sh spot catalog      for Voltdb server
+or
+bash run_tpcbx.sh spot catalog-cv   for CVoltdb server
+bash run_tpcbx.sh spot server > server.log   (either server)
+
+Multihost: uses mh_deployment.xml
+--Check host ids in run_tpcbmh.sh
+bash run_tpcbmh.sh spot catalog      for Voltdb server
+or
+bash run_tpcbmh.sh spot catalog-cv   for CVoltdb server
+bash run_tpcbmh.sh spot server > server.log   (either server)
+
+To run client with 15% MP:
+Single host
+bash run_tpcbx.sh spot 15 > client.log    (space needed between 5 and >)
+
+Multiple hosts
+bash run_tpcbmh.sh spot 15 > client.log   (space needed between 5 and >)
+
+TPC-C: so far, only run_tpcc.sh, like run_tpcbx.sh, but doesn't
+load items when run with release servers, and crashes earlier
+with debug servers.

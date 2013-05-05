@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project>
+    <database>
+       <schemas>
+           <schema path='helloworld.sql' />
+       </schemas>
+       <procedures>
+           <!--procedure class='BatchInsert' /-->
+           <procedure class='Select' />
+           <!--procedure class='RegisterUser' />
+           <procedure class='SignIn' />
+           <procedure class='ReplicatedTable' />
+           <procedure class='Insert2' />
+           <procedure class='Delete' /-->
+       </procedures>
+       <partitions>
+           <!-- partition table='HELLOWORLD' column='DIALECT' / -->
+            <partition table='USERACCOUNT' column='EMAIL' />
+            <partition table='TEST' column='A' />
+       </partitions>
+    </database>
+</project>

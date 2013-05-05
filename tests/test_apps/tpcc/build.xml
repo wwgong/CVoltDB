@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<project default="default" name="VoltDB Example: Escrow (Transfer between accounts)">
+
+<property name='catalog' value='tpcb.jar'/>
+<property name='src.dir' location='src/'/>
+<property name='procedures.dir' location='src/com/tpcbprocedures'/>
+
+<import file="basebuild.xml"/>
+
+<target name="client" description='Start client.'>
+  <invoke-java classname="${src.dir}/com/MyTPCB"/>
+</target>
+
+</project>
+

@@ -1,0 +1,41 @@
+TPCB and TPCC for VoltDB and CVoltDB, as of 2/24/13
+
+Sources: set up for CVoltdb here, sources in src
+
+To run with VoltDB:
+Copy everything to another directory
+Replace src/com/*procedures with src1/com/*procedures
+rm -r src/com/*procedures
+mv src1/com/*proceures src/com
+
+If using Voltdb 3.0, change src/com/TPCCLoader.java's import of org.voltdb.Pair
+   to import of org.voltcore.Pair
+
+To run with Voltdb or CVoltdb at ../spot
+
+To run server: single host
+Single Host: uses deployment.xml
+bash run_tpcb1.sh spot catalog-v      for Voltdb server
+or
+bash run_tpcb1.sh spot catalog-cv   for CVoltdb server
+bash run_tpcb1.sh spot server > server.log   (either server)
+
+Multihost: uses mhx_deployment.xml x= 2, 3, or 4
+--Check host ids in run_tpcbmhx.sh
+bash run_tpcbx.sh spot catalog-v      for Voltdb server
+or
+bash run_tpcbx.sh spot catalog-cv   for CVoltdb server
+bash run_tpcbx.sh spot server > server.log   (either server)
+
+To run TPCB client with 15% MP:
+Single host
+bash run_tpcb1.sh spot 15 > client.log    (space needed between 5 and >)
+
+Multiple hosts
+bash run_tpcb2.sh spot 15 > client.log   (space needed between 5 and >)
+
+TPC-C: run_tpcc1.sh for single host, like run_tpcb1.sh
+--but no MP_PERCENT arg as yet
+
+src1: procedures and tpcbprocedures without CVoltdb annotations/escrow
+
